@@ -9,6 +9,7 @@ export default class DropdownMenu {
     } else {
       this.events = events;
     }
+
     this.activeClass = "active";
     this.activeDropdownMenu = this.activeDropdownMenu.bind(this);
   }
