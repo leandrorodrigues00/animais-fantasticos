@@ -1,6 +1,6 @@
-export default class initFuncionamento {
-  constructor(funcionamento, activeClass) {
-    this.funcionamento = document.querySelector(funcionamento);
+export default class Funcionamento {
+  constructor(functionamento, activeClass) {
+    this.funcionamento = document.querySelector(functionamento);
     this.activeClass = activeClass;
   }
 
@@ -22,7 +22,6 @@ export default class initFuncionamento {
     const horarioAberto =
       this.horarioAgora >= this.horarioSemana[0] &&
       this.horarioAgora < this.horarioSemana[1];
-
     return semanaAberto && horarioAberto;
   }
 
